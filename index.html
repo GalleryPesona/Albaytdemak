@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Albayt Haji &amp; Umroh</title>
+<style>
+:root{--bg:#faf8f3;--sf:#fff;--tx:#1d2a24;--mu:#5f6f67;--br:#e3ded2;--pr:#0f6b4f;--pt:#fff;--ac:#c59a3d;--ok:#1e8a5a;--wn:#b9770e;--bd:#b3261e;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1714;--sf:#17221d;--tx:#e8efe9;--mu:#9bab a2;--mu:#9aaba1;--br:#2a3a33;--pr:#3fb68b;--pt:#06231a;--ac:#d8b055}}
+:root[data-theme="dark"]{--bg:#0f1714;--sf:#17221d;--tx:#e8efe9;--mu:#9aaba1;--br:#2a3a33;--pr:#3fb68b;--pt:#06231a;--ac:#d8b055}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cg fill='none' stroke='%23b8892b' stroke-opacity='.16'%3E%3Crect x='15' y='15' width='30' height='30'/%3E%3Crect x='15' y='15' width='30' height='30' transform='rotate(45 30 30)'/%3E%3C/g%3E%3C/svg%3E");color:var(--tx);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.2;margin:0 0 .5em}
+.w{max-width:1040px;margin:0 auto;padding:0 18px}
+header{position:sticky;top:env(safe-area-inset-top,0px);background:var(--sf);border-bottom:3px solid var(--ac);z-index:5}
+.nav{display:flex;align-items:center;gap:6px;flex-wrap:wrap;padding:10px 18px;max-width:1040px;margin:auto}
+.logo{font:700 20px Georgia,serif;color:var(--pr);margin-right:auto;cursor:pointer}.logo span{color:var(--ac)}
+.nav button{background:none;border:0;color:var(--tx);font:inherit;padding:7px 11px;border-radius:8px;cursor:pointer}
+.nav button.on{background:var(--pr);color:var(--pt)}
+.hero{position:relative;overflow:hidden;background:radial-gradient(1.5px 1.5px at 12% 20%,#fffc,transparent),radial-gradient(1.5px 1.5px at 78% 14%,#fffc,transparent),radial-gradient(1px 1px at 55% 30%,#fff9,transparent),radial-gradient(1.5px 1.5px at 90% 40%,#fffc,transparent),radial-gradient(1px 1px at 30% 45%,#fff9,transparent),radial-gradient(1px 1px at 65% 8%,#fff9,transparent),linear-gradient(180deg,#07142b 0%,#0b3a33 70%,#0f6b4f 100%);color:#fff;padding:60px 0 150px;border-bottom:4px solid var(--ac)}.sky{position:absolute;left:0;bottom:0;width:100%;height:170px}.bis{font:30px "Amiri","Scheherazade New","Traditional Arabic",serif;color:#e6c46d;margin-bottom:10px}.hero h1{text-shadow:0 2px 12px #0008}
+.hero h1{font-size:clamp(28px,5vw,44px)}.hero p{max-width:560px;opacity:.9}
+.btn{display:inline-block;background:var(--pr);color:var(--pt);border:0;border-radius:10px;padding:10px 18px;font:600 15px inherit;font-family:inherit;cursor:pointer}
+.hero .btn{background:var(--ac);color:#1d1606}.btn.o{background:none;border:1px solid var(--br);color:var(--tx)}.btn.s{padding:5px 10px;font-size:13px}.btn.d{background:var(--bd);color:#fff}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.c{background:var(--sf);border:1px solid var(--br);border-top:3px solid var(--ac);border-radius:14px;padding:16px}
+.tag{font-size:12px;background:color-mix(in srgb,var(--ac) 22%,transparent);color:var(--tx);padding:2px 9px;border-radius:99px}
+.mu{color:var(--mu);font-size:14px}section{padding:30px 0}h2::after{content:"";display:block;width:64px;height:3px;margin-top:8px;background:linear-gradient(90deg,var(--ac),transparent)}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.tabs button{border:1px solid var(--br);background:var(--sf);color:var(--tx);border-radius:99px;padding:6px 14px;cursor:pointer;font:inherit}
+.tabs button.on{background:var(--pr);color:var(--pt);border-color:var(--pr)}
+.ph{height:120px;border-radius:10px;display:grid;place-items:center;font-size:40px;margin-bottom:10px;background:linear-gradient(135deg,#0b0b0b 55%,#c9a24a)}
+label{display:block;font-size:14px;margin:10px 0 3px}
+input,select,textarea{width:100%;padding:9px 11px;border:1px solid var(--br);border-radius:9px;background:var(--bg);color:var(--tx);font:inherit}
+.f{max-width:400px;margin:20px auto}
+.steps{display:flex;flex-direction:column;gap:0;margin:10px 0}
+.st{display:flex;gap:12px;padding:7px 0;align-items:center}
+.dot{width:28px;height:28px;border-radius:50%;border:2px solid var(--br);display:grid;place-items:center;font-size:13px;flex:none}
+.st.done .dot{background:var(--ok);border-color:var(--ok);color:#fff}.st.now .dot{border-color:var(--ac);background:var(--ac);color:#1d1606}.st.now b{color:var(--pr)}
+.pill{display:inline-block;padding:3px 10px;border-radius:99px;font-size:13px;font-weight:600}
+.p-ok{background:color-mix(in srgb,var(--ok) 20%,transparent);color:var(--ok)}.p-wn{background:color-mix(in srgb,var(--wn) 20%,transparent);color:var(--wn)}.p-mu{background:var(--br);color:var(--mu)}
+.tw{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:14px}th,td{text-align:left;padding:8px;border-bottom:1px solid var(--br);vertical-align:middle}
+td input,td select{padding:5px 7px;font-size:13px;min-width:120px}td input[type=checkbox]{min-width:0;width:auto}
+.stat{font:700 30px Georgia,serif;color:var(--pr)}
+.msg{color:var(--bd);font-size:14px;min-height:20px}
+footer{padding:26px 18px;text-align:center;color:var(--mu);font-size:14px;border-top:1px solid var(--br);margin-top:30px}
+.two{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+</style>
+</head>
+<body>
+<header><div class="nav" id="nav"></div></header>
+<main id="app"></main>
+<footer>© 2026 Albayt Haji &amp; Umroh · Melayani dengan amanah · Demo: data tersimpan di browser ini</footer>
+<script>
+var K="albayt_v1",S,V="beranda",PER=null,AT="ringkasan",TAB="login";
+var STEPS=["Pendaftaran","Verifikasi dokumen","Pembayaran","Pengurusan visa","Koper & perlengkapan","Paspor & tiket","Keberangkatan"];
+function seed(){return{
+news:[{id:1,cat:"Pengumuman",date:"2026-10-28",t:"Pendaftaran Umroh Desember 2026 Dibuka",x:"Kuota terbatas 45 jamaah. Daftar sekarang dan pantau seluruh proses dari dasbor jamaah."},
+{id:2,cat:"Kegiatan",date:"2026-10-20",t:"Manasik Umroh Perdana Periode November",x:"Manasik dilaksanakan Ahad pekan depan, membahas tata cara ibadah, doa, dan persiapan fisik."},
+{id:3,cat:"Info",date:"2026-10-12",t:"Tips Mengemas Koper untuk Umroh",x:"Bawa pakaian secukupnya, obat pribadi, dan sisakan ruang untuk oleh-oleh dari Tanah Suci."},
+{id:4,cat:"Info",date:"2026-10-02",t:"Syarat Dokumen Pendaftaran Haji dan Umroh",x:"Siapkan KTP, KK, paspor minimal berlaku 8 bulan, pas foto, dan buku nikah bagi pasangan."}],
+docs:[{id:1,p:"Haji 1447 H (2026)",t:"Pelepasan jamaah di Asrama Haji",n:48},{id:2,p:"Haji 1447 H (2026)",t:"Wukuf di Arafah",n:62},
+{id:3,p:"Umroh Agustus 2026",t:"Tawaf di Masjidil Haram",n:36},{id:4,p:"Umroh Agustus 2026",t:"Ziarah Madinah",n:29},
+{id:5,p:"Umroh Desember 2025",t:"Kebersamaan jamaah di Makkah",n:41},{id:6,p:"Umroh Desember 2025",t:"Rawdah dan Masjid Nabawi",n:33}],
+users:[{id:1,nama:"Demo Jamaah",email:"demo@albayt.id",pw:"demo123",hp:"081234567890",jenis:"Umroh",periode:"Umroh Desember 2026",step:4,koper:"2026-11-20",koperAmbil:false,paspor:"2026-11-27",pasporAmbil:false},
+{id:2,nama:"Siti Aminah",email:"siti@mail.com",pw:"x",hp:"081311112222",jenis:"Haji",periode:"Haji 1448 H (2027)",step:2,koper:"",koperAmbil:false,paspor:"",pasporAmbil:false},
+{id:3,nama:"Ahmad Fauzi",email:"fauzi@mail.com",pw:"x",hp:"081355556666",jenis:"Umroh",periode:"Umroh Desember 2026",step:5,koper:"2026-10-30",koperAmbil:true,paspor:"2026-11-03",pasporAmbil:false}],
+sess:null,admin:false}}
+function load(){try{S=JSON.parse(localStorage.getItem(K))}catch(e){}if(!S)S=seed()}
+function save(){try{localStorage.setItem(K,JSON.stringify(S))}catch(e){}}
+function E(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function D(d){if(!d)return"-";return new Date(d).toLocaleDateString("id-ID",{day:"numeric",month:"long",year:"numeric"})}
+function days(d){return Math.ceil((new Date(d)-new Date())/864e5)}
+function me(){return S.users.find(function(u){return u.email===S.sess})}
+function go(v){V=v;try{location.hash=v}catch(e){}render();window.scrollTo(0,0)}
+function render(){
+var N=[["beranda","Beranda"],["dokumentasi","Dokumentasi"],["dasbor",S.sess?"Dasbor Saya":"Masuk / Daftar"],["admin","Admin"]];
+document.getElementById("nav").innerHTML='<div class="logo" onclick="go(\'beranda\')">🕋 Al<span>bayt</span> Haji &amp; Umroh</div>'+N.map(function(n){return'<button class="'+(V===n[0]?"on":"")+'" onclick="go(\''+n[0]+'\')">'+n[1]+'</button>'}).join("");
+document.getElementById("app").innerHTML=({beranda:home,dokumentasi:docs,dasbor:dash,admin:admin}[V]||home)()}
+function home(){
+return'<div class="hero"><svg class="sky" viewBox="0 0 1000 170" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><defs><radialGradient id="g"><stop offset="0" stop-color="#e6c46d" stop-opacity=".55"/><stop offset="1" stop-color="#e6c46d" stop-opacity="0"/></radialGradient></defs><circle cx="500" cy="125" r="160" fill="url(#g)"/><g fill="#04120d"><rect x="296" y="50" width="10" height="120"/><rect x="293" y="78" width="16" height="6"/><path d="M294 50L301 26L308 50Z"/><rect x="690" y="50" width="10" height="120"/><rect x="687" y="78" width="16" height="6"/><path d="M688 50L695 26L702 50Z"/><rect x="176" y="80" width="9" height="90"/><path d="M174 80L180 62L187 80Z"/><rect x="808" y="80" width="9" height="90"/><path d="M806 80L812 62L819 80Z"/><rect x="860" y="135" width="140" height="35"/><rect x="0" y="150" width="1000" height="20"/></g><path d="M50 170V142A40 40 0 0 1 130 142V170Z" fill="#2a9d6f"/><rect x="89" y="88" width="2" height="14" fill="#e6c46d"/><rect x="445" y="101" width="110" height="69" fill="#0b0b0b" stroke="#2a2a2a"/><rect x="445" y="118" width="110" height="9" fill="#c9a24a"/><rect x="522" y="135" width="16" height="35" fill="#d9b45a"/><ellipse cx="500" cy="164" rx="175" ry="9" fill="none" stroke="#ffffff55"/></svg><div class="w" style="position:relative"><div class="bis">بِسْمِ ٱللَّهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div><h1>Perjalanan ibadah yang tenang, amanah, dan terpantau.</h1><p>Albayt melayani pendaftaran haji dan umroh. Pantau proses pendaftaran, jadwal pengambilan koper dan paspor langsung dari dasbor Anda.</p><button class="btn" onclick="go(\'dasbor\')">Daftar / Masuk</button> <button class="btn o" style="color:#fff;border-color:#fff8" onclick="go(\'dokumentasi\')">Lihat Dokumentasi</button></div></div>'+
+'<section><div class="w"><h2>Berita &amp; Informasi</h2><div class="grid">'+S.news.map(function(n){return'<div class="c"><span class="tag">'+E(n.cat)+'</span> <span class="mu">'+D(n.date)+'</span><h3 style="margin-top:8px;font-size:18px">'+E(n.t)+'</h3><p class="mu" style="margin:0">'+E(n.x)+'</p></div>'}).join("")+'</div></div></section>'+
+'<section><div class="w"><h2>Layanan Kami</h2><div class="grid"><div class="c"><h3>📋 Pendaftaran Online</h3><p class="mu">Buat akun, daftar haji atau umroh, unggah data dengan mudah.</p></div><div class="c"><h3>📍 Pantau Proses</h3><p class="mu">Lihat tahap pendaftaran dari verifikasi hingga keberangkatan.</p></div><div class="c"><h3>🧳 Koper &amp; Paspor</h3><p class="mu">Tahu kapan koper dan paspor siap diambil.</p></div><div class="c"><h3>📸 Dokumentasi</h3><p class="mu">Galeri kegiatan setiap periode keberangkatan.</p></div></div></div></section>'}
+function docs(){
+var ps=[];S.docs.forEach(function(d){if(ps.indexOf(d.p)<0)ps.push(d.p)});if(!PER||ps.indexOf(PER)<0)PER=ps[0];
+return'<section><div class="w"><h2>Dokumentasi Haji &amp; Umroh</h2><p class="mu">Kenangan jamaah, dikelompokkan per periode keberangkatan.</p><div class="tabs">'+ps.map(function(p){return'<button class="'+(p===PER?"on":"")+'" onclick="PER=this.dataset.p;render()" data-p="'+E(p)+'">'+E(p)+'</button>'}).join("")+'</div><div class="grid">'+S.docs.filter(function(d){return d.p===PER}).map(function(d){return'<div class="c"><div class="ph">🕋</div><b>'+E(d.t)+'</b><div class="mu">'+d.n+' foto</div></div>'}).join("")+'</div></div></section>'}
+function dash(){var u=me();if(!u)return authForm();
+var koper=pick(u.koper,u.koperAmbil,"koper"),pas=pick(u.paspor,u.pasporAmbil,"paspor");
+return'<section><div class="w"><div style="display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap"><div><h2>Assalamu’alaikum, '+E(u.nama)+'</h2><div class="mu">'+E(u.jenis)+' · '+E(u.periode)+'</div></div><button class="btn o s" onclick="S.sess=null;save();go(\'dasbor\')">Keluar</button></div>'+
+'<div class="two" style="margin-top:14px"><div class="c"><h3>Proses Pendaftaran</h3><div class="steps">'+STEPS.map(function(s,i){var c=i<u.step?"done":i===u.step?"now":"";return'<div class="st '+c+'"><div class="dot">'+(i<u.step?"✓":i+1)+'</div><b>'+s+'</b>'+(i===u.step?' <span class="pill p-wn">Sedang diproses</span>':"")+'</div>'}).join("")+'</div></div><div><div class="c" style="margin-bottom:14px"><h3>🧳 Pengambilan Koper</h3>'+koper+'</div><div class="c"><h3>🛂 Pengambilan Paspor</h3>'+pas+'</div></div></div></div></section>'}
+function pick(d,t,k){
+if(t)return'<span class="pill p-ok">Sudah diambil</span>';
+if(!d)return'<span class="pill p-mu">Jadwal belum ditentukan</span><p class="mu">Kami akan memperbarui jadwal pengambilan '+k+' di sini.</p>';
+var n=days(d);return n<=0?'<span class="pill p-ok">Siap diambil</span><p class="mu">Silakan ambil di kantor Albayt (sejak '+D(d)+').</p>':'<span class="pill p-wn">'+n+' hari lagi</span><p class="mu">Dapat diambil mulai '+D(d)+'.</p>'}
+function authForm(){var L=TAB==="login";
+return'<div class="w"><div class="c f"><div class="tabs"><button class="'+(L?"on":"")+'" onclick="TAB=\'login\';render()">Masuk</button><button class="'+(L?"":"on")+'" onclick="TAB=\'daftar\';render()">Daftar Baru</button></div>'+
+(L?'<label>Email</label><input id="e" type="email"><label>Kata sandi</label><input id="p" type="password"><div class="msg" id="m"></div><button class="btn" onclick="login()">Masuk</button><p class="mu">Demo: demo@albayt.id / demo123</p>':
+'<label>Nama lengkap</label><input id="n"><label>Email</label><input id="e" type="email"><label>No. HP</label><input id="h"><label>Kata sandi</label><input id="p" type="password"><label>Program</label><select id="j"><option>Umroh</option><option>Haji</option></select><label>Periode</label><select id="r"><option>Umroh Desember 2026</option><option>Umroh Maret 2027</option><option>Haji 1448 H (2027)</option></select><div class="msg" id="m"></div><button class="btn" onclick="reg()">Daftar</button>')+'</div></div>'}
+function $(i){return document.getElementById(i).value.trim()}
+function login(){var u=S.users.find(function(x){return x.email===$("e").toLowerCase()&&x.pw===$("p")});if(!u){document.getElementById("m").textContent="Email atau kata sandi salah.";return}S.sess=u.email;save();render()}
+function reg(){var n=$("n"),e=$("e").toLowerCase(),p=$("p");if(!n||!e||p.length<6){document.getElementById("m").textContent="Lengkapi data; kata sandi minimal 6 karakter.";return}
+if(S.users.some(function(x){return x.email===e})){document.getElementById("m").textContent="Email sudah terdaftar.";return}
+S.users.push({id:Date.now(),nama:n,email:e,pw:p,hp:$("h"),jenis:$("j"),periode:$("r"),step:0,koper:"",koperAmbil:false,paspor:"",pasporAmbil:false});S.sess=e;save();render()}
+function admin(){
+if(!S.admin)return'<div class="w"><div class="c f"><h3>Masuk Admin</h3><label>Email</label><input id="e"><label>Kata sandi</label><input id="p" type="password"><div class="msg" id="m"></div><button class="btn" onclick="alogin()">Masuk</button><p class="mu">Demo: admin@albayt.id / admin123</p></div></div>';
+var T=[["ringkasan","Ringkasan"],["jamaah","Jamaah"],["berita","Berita"],["dok","Dokumentasi"]];
+return'<section><div class="w"><div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px"><h2>Dasbor Admin</h2><button class="btn o s" onclick="S.admin=false;save();render()">Keluar</button></div><div class="tabs">'+T.map(function(t){return'<button class="'+(AT===t[0]?"on":"")+'" onclick="AT=\''+t[0]+'\';render()">'+t[1]+'</button>'}).join("")+'</div>'+({ringkasan:aSum,jamaah:aJam,berita:aNews,dok:aDoc}[AT])()+'</div></section>'}
+function alogin(){if($("e")==="admin@albayt.id"&&$("p")==="admin123"){S.admin=true;save();render()}else document.getElementById("m").textContent="Email atau kata sandi salah."}
+function aSum(){var U=S.users,h=U.filter(function(u){return u.jenis==="Haji"}).length;
+var c=[[U.length,"Total pendaftar"],[h,"Haji"],[U.length-h,"Umroh"],[U.filter(function(u){return u.step<6&&!u.koperAmbil}).length,"Koper belum diambil"],[U.filter(function(u){return !u.pasporAmbil}).length,"Paspor belum diambil"],[S.news.length,"Berita"]];
+return'<div class="grid">'+c.map(function(x){return'<div class="c"><div class="stat">'+x[0]+'</div><div class="mu">'+x[1]+'</div></div>'}).join("")+'</div>'}
+function aJam(){return'<div class="c tw"><table><tr><th>Nama</th><th>Program</th><th>Tahap</th><th>Koper siap</th><th>✓</th><th>Paspor siap</th><th>✓</th><th></th></tr>'+S.users.map(function(u){var i=u.id;return'<tr><td><b>'+E(u.nama)+'</b><div class="mu">'+E(u.hp)+'</div></td><td>'+E(u.jenis)+'<div class="mu">'+E(u.periode)+'</div></td><td><select onchange="up('+i+',\'step\',+this.value)">'+STEPS.map(function(s,k){return'<option value="'+k+'"'+(k===u.step?" selected":"")+'>'+(k+1)+". "+s+'</option>'}).join("")+'</select></td><td><input type="date" value="'+u.koper+'" onchange="up('+i+',\'koper\',this.value)"></td><td><input type="checkbox" '+(u.koperAmbil?"checked":"")+' onchange="up('+i+',\'koperAmbil\',this.checked)"></td><td><input type="date" value="'+u.paspor+'" onchange="up('+i+',\'paspor\',this.value)"></td><td><input type="checkbox" '+(u.pasporAmbil?"checked":"")+' onchange="up('+i+',\'pasporAmbil\',this.checked)"></td><td><button class="btn d s" onclick="del('+i+')">Hapus</button></td></tr>'}).join("")+'</table></div><p class="mu">Perubahan langsung terlihat di dasbor jamaah. Centang ✓ = sudah diambil.</p>'}
+function up(i,k,v){S.users.forEach(function(u){if(u.id===i)u[k]=v});save()}
+function del(i){if(confirm("Hapus pendaftar ini?")){S.users=S.users.filter(function(u){return u.id!==i});if(!me())S.sess=null;save();render()}}
+function aNews(){return'<div class="two"><div class="c"><h3>Tambah Berita</h3><label>Judul</label><input id="t"><label>Kategori</label><select id="k"><option>Pengumuman</option><option>Kegiatan</option><option>Info</option></select><label>Isi</label><textarea id="x" rows="3"></textarea><br><br><button class="btn" onclick="addN()">Terbitkan</button></div><div class="c"><h3>Berita Terbit</h3>'+S.news.map(function(n){return'<div style="display:flex;justify-content:space-between;gap:8px;padding:6px 0;border-bottom:1px solid var(--br)"><span>'+E(n.t)+'</span><button class="btn d s" onclick="S.news=S.news.filter(function(z){return z.id!=='+n.id+'});save();render()">Hapus</button></div>'}).join("")+'</div></div>'}
+function addN(){var t=$("t");if(!t)return;S.news.unshift({id:Date.now(),cat:$("k"),date:new Date().toISOString().slice(0,10),t:t,x:$("x")});save();render()}
+function aDoc(){return'<div class="two"><div class="c"><h3>Tambah Album</h3><label>Periode</label><input id="p" placeholder="mis. Umroh Januari 2027"><label>Judul album</label><input id="t"><label>Jumlah foto</label><input id="n" type="number" value="20"><br><br><button class="btn" onclick="addD()">Simpan</button></div><div class="c"><h3>Album</h3>'+S.docs.map(function(d){return'<div style="display:flex;justify-content:space-between;gap:8px;padding:6px 0;border-bottom:1px solid var(--br)"><span>'+E(d.t)+'<div class="mu">'+E(d.p)+'</div></span><button class="btn d s" onclick="S.docs=S.docs.filter(function(z){return z.id!=='+d.id+'});save();render()">Hapus</button></div>'}).join("")+'</div></div>'}
+function addD(){var p=$("p"),t=$("t");if(!p||!t)return;S.docs.push({id:Date.now(),p:p,t:t,n:+$("n")||0});PER=p;save();render()}
+load();var h=(location.hash||"").slice(1);if(["beranda","dokumentasi","dasbor","admin"].indexOf(h)>=0)V=h;
+window.addEventListener("hashchange",function(){var x=location.hash.slice(1);if(x&&x!==V){V=x;render()}});
+render();
+</script>
+</body>
+</html>
